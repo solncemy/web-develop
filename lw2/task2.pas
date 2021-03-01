@@ -13,5 +13,9 @@ BEGIN
     THEN
       WRITELN('The British are coming by sea')
     ELSE
-      WRITELN('Sarah did not say')
+      IF GetEnv('QUERY_STRING') = 'lanterns=3' 
+      THEN
+        WRITELN('The British are coming by air') 
+      ELSE
+        WRITELN('Sarah did not say')
 END.
