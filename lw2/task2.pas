@@ -12,4 +12,6 @@ BEGIN
     IF GetEnv('QUERY_STRING') = 'lanterns=2'
     THEN
       WRITELN('The British are coming by sea')
+    ELSE
+      WRITELN('Sarah did not say')
 END.
